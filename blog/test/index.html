@@ -118,7 +118,7 @@
       <div class="col-lg-8 mx-auto">
         
         <h2></h2>
-        <div class="mb-3 post-meta">
+        <div class="mb-3 post-meta" >
           <span>By yuling</span>
           
           <span class="border-bottom border-primary px-2 mx-1"></span>
@@ -126,7 +126,7 @@
           
         </div>
         
-        <div class="content mb-5">
+        <div class="content mb-5" onmousedown='return false;' onselectstart='return false;'>
           <p>Hello</p>
 <p>HHH</p>
 <h1 id="標題一">標題一</h1>
@@ -170,9 +170,27 @@ print(<span style="color:#e6db74">&#34;hello yuling&#34;</span>)
 print(<span style="color:#e6db74">&#34;hello yuling&#34;</span>)
 </code></pre></div>
         </div>
-
         
-        
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "yulingkangtw-1" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
       </div>
     </div>
   </div>
